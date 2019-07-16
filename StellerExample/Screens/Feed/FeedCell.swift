@@ -12,9 +12,11 @@ class FeedCell: UICollectionViewCell {
 
     @IBOutlet private weak var storyImageView: UIImageView!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func setImage(name: String) {
+        storyImageView.image = UIImage(named: name)
     }
 
+    override func prepareForReuse() {
+        storyImageView.image = nil
+    }
 }

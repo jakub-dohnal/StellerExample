@@ -22,6 +22,7 @@ final class AppCoordinator: Coordinator {
 
 private extension AppCoordinator {
     func showFeed() {
-        //TODO: present feed screen
+        let vc = FeedViewController(stories: Array(repeating: "mockStory", count: 20))
+        router.presentAsRoot(vc)
     }
 }
