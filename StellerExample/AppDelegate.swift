@@ -12,9 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var mainCoordinator: Coordinator!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+        guard let window = window else { return false }
+        let router = RouterImp(window: window)
+        mainCoordinator = AppCoordinator(router: router)
+        mainCoordinator.start()
+
         return true
     }
 
