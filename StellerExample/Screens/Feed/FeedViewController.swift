@@ -10,12 +10,19 @@ import UIKit
 
 class FeedViewController: UICollectionViewController {
 
-    let storiesViewModels: [String]
+    let storiesViewModels: [StoryViewModel]
 
-    init(stories: [String]) {
+    let space: CGFloat = 20
+
+    init(stories: [StoryViewModel]) {
         storiesViewModels = stories
 
-        super.init(collectionViewLayout: UICollectionViewFlowLayout())
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumInteritemSpacing = space
+        layout.minimumLineSpacing = space
+        layout.sectionInset = UIEdgeInsets(top: space, left: space, bottom: space, right: space)
+
+        super.init(collectionViewLayout: layout)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -43,7 +50,7 @@ class FeedViewController: UICollectionViewController {
         let cell = dequeueReusableCell(FeedCell.self, for: indexPath)
     
         // Configure the cell
-        cell.setImage(name: storiesViewModels[indexPath.row])
+        cell.config(viewModel: storiesViewModels[indexPath.row])
     
         return cell
     }
