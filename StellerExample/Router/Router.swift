@@ -9,5 +9,6 @@
 import UIKit
 
 protocol Router {
+    func presentAsRoot(_ viewController: UIViewController)
     func present(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)?)
 }

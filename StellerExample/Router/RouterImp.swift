@@ -22,4 +22,9 @@ final class RouterImp: Router {
         presentedViewController?.present(viewController, animated: animated, completion: completion)
         presentedViewController = viewController
     }
+
+    func presentAsRoot(_ viewController: UIViewController) {
+        window.rootViewController = viewController
+        presentedViewController = viewController
+    }
 }
