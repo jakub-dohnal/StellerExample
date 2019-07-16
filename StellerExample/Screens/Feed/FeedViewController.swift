@@ -8,8 +8,6 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
-
 class FeedViewController: UICollectionViewController {
 
     let storiesViewModels: [String]
@@ -27,7 +25,7 @@ class FeedViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        collectionView?.register(UINib(nibName: "FeedCell", bundle: Bundle.main), forCellWithReuseIdentifier: reuseIdentifier)
+        loadCells([FeedCell.self])
         collectionView?.backgroundColor = .white
     }
 
@@ -42,7 +40,7 @@ class FeedViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FeedCell
+        let cell = dequeueReusableCell(FeedCell.self, for: indexPath)
     
         // Configure the cell
         cell.setImage(name: storiesViewModels[indexPath.row])

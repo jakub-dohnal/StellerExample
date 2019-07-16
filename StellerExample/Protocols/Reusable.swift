@@ -6,7 +6,7 @@
 //  Copyright © 2019 Jakub Dohnal. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol Reusable: class {
     static var identifier: String { get }

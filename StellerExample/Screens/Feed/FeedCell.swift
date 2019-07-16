@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeedCell: UICollectionViewCell {
+class FeedCell: RegistrableCell {
 
     @IBOutlet private weak var storyImageView: UIImageView!
 
