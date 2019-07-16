@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeedViewController: UICollectionViewController {
+class FeedViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     let storiesViewModels: [StoryViewModel]
 
@@ -60,5 +60,14 @@ class FeedViewController: UICollectionViewController {
     // Uncomment this method to specify if the specified item should be selected
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         return true
+    }
+}
+
+extension FeedViewController {
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let numberOfColumns: CGFloat = 2
+        let width = (collectionView.bounds.width - space * (numberOfColumns + 1)) / numberOfColumns
+        return CGSize(width: width, height: width)
     }
 }
