@@ -1,5 +1,5 @@
 //
-//  FeedService.swift
+//  FeedNetworkService.swift
 //  StellerExample
 //
 //  Created by Jakub Dohnal on 17/07/2019.
@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct FeedService: Service {
+struct FeedNetworkService: NetworkService {
+
     let networkDispatcher: NetworkDispatcher
 
     func getStories(completion: @escaping (Result<StoriesResponse>) -> Void) {

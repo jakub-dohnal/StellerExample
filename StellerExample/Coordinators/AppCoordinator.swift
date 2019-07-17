@@ -24,7 +24,7 @@ final class AppCoordinator: Coordinator {
 private extension AppCoordinator {
     func showFeed() {
         let networkDispatcher = NetworkDispatcher()
-        let service = FeedService(networkDispatcher: networkDispatcher)
+        let service = FeedNetworkService(networkDispatcher: networkDispatcher)
         let presenter = FeedPresenterImp(service: service)
         let vc = FeedViewController(presenter: presenter)
         router.presentAsRoot(vc)

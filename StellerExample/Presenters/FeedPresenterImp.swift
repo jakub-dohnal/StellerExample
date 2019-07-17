@@ -10,11 +10,11 @@ import Foundation
 
 class FeedPresenterImp: FeedPresenter {
 
-    let service: FeedService
+    let service: FeedNetworkService
 
     weak var delegate: FeedPresenterDelegate?
 
-    init(service: FeedService) {
+    init(service: FeedNetworkService) {
         self.service = service
     }
 

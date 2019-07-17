@@ -1,5 +1,5 @@
 //
-//  Service.swift
+//  NetworkService.swift
 //  StellerExample
 //
 //  Created by Jakub Dohnal on 17/07/2019.
@@ -13,11 +13,11 @@ enum Result<Value> {
     case error(Error)
 }
 
-protocol Service {
+protocol NetworkService {
     var networkDispatcher: NetworkDispatcher { get }
 }
 
-extension Service {
+extension NetworkService {
     
     func execute<Value>(request: Request, completion: @escaping (Result<Value>) -> Void) where Value: Codable {
         let request = FeedRequest()
