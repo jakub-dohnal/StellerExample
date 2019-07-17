@@ -23,6 +23,8 @@
 		A758C3EF22DE880300E4599C /* StoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3EE22DE880300E4599C /* StoryViewModel.swift */; };
 		A758C3F222DE8C0500E4599C /* UIImageView+RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3F122DE8C0500E4599C /* UIImageView+RemoteImage.swift */; };
 		A758C3F422DE9B9500E4599C /* FeedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3F322DE9B9500E4599C /* FeedRequest.swift */; };
+		A758C3F822DEF80000E4599C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3F722DEF80000E4599C /* Service.swift */; };
+		A758C3FA22DEF82F00E4599C /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3F922DEF82F00E4599C /* FeedService.swift */; };
 		A7E2E48122DE04EF003207AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2E48022DE04EF003207AC /* AppDelegate.swift */; };
 		A7E2E48822DE04F1003207AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E2E48722DE04F1003207AC /* Assets.xcassets */; };
 		A7E2E48B22DE04F1003207AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E2E48922DE04F1003207AC /* LaunchScreen.storyboard */; };
@@ -64,6 +66,8 @@
 		A758C3EE22DE880300E4599C /* StoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewModel.swift; sourceTree = "<group>"; };
 		A758C3F122DE8C0500E4599C /* UIImageView+RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+RemoteImage.swift"; sourceTree = "<group>"; };
 		A758C3F322DE9B9500E4599C /* FeedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRequest.swift; sourceTree = "<group>"; };
+		A758C3F722DEF80000E4599C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A758C3F922DEF82F00E4599C /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
 		A7E2E47D22DE04EF003207AC /* StellerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StellerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E2E48022DE04EF003207AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7E2E48722DE04F1003207AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 		A758C3E922DE81D400E4599C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				A758C3F622DEF7E600E4599C /* Services */,
 				A758C3F522DEF72C00E4599C /* Requests */,
 				A758C3EA22DE82A000E4599C /* NetworkDispatcher.swift */,
 			);
@@ -180,6 +185,15 @@
 				A758C3F322DE9B9500E4599C /* FeedRequest.swift */,
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		A758C3F622DEF7E600E4599C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A758C3F722DEF80000E4599C /* Service.swift */,
+				A758C3F922DEF82F00E4599C /* FeedService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		A7E2E47422DE04EF003207AC = {
@@ -380,12 +394,14 @@
 				A758C3E822DE7D2800E4599C /* Reusable.swift in Sources */,
 				A758C3E322DE755700E4599C /* Loudable.swift in Sources */,
 				A758C3D722DE612E00E4599C /* RouterImp.swift in Sources */,
+				A758C3F822DEF80000E4599C /* Service.swift in Sources */,
 				A758C3D922DE673E00E4599C /* FeedViewController.swift in Sources */,
 				A758C3E522DE78CF00E4599C /* CollectionCell+Registrable.swift in Sources */,
 				A758C3F422DE9B9500E4599C /* FeedRequest.swift in Sources */,
 				A758C3EF22DE880300E4599C /* StoryViewModel.swift in Sources */,
 				A758C3F222DE8C0500E4599C /* UIImageView+RemoteImage.swift in Sources */,
 				A7E2E48122DE04EF003207AC /* AppDelegate.swift in Sources */,
+				A758C3FA22DEF82F00E4599C /* FeedService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
