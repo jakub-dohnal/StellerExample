@@ -8,20 +8,19 @@
 
 import UIKit
 
-class FeedViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class FeedViewController: UICollectionViewController {
 
-    let service: FeedService
+    let space: CGFloat = 20
+    let presenter: FeedPresenter
 
-    var storiesViewModels: [StoryViewModel] = [] {
+    var stories: [StoryViewModel] = [] {
         didSet {
             collectionView.reloadData()
         }
     }
 
-    let space: CGFloat = 20
-
-    init(service: FeedService) {
-        self.service = service
+    init(presenter: FeedPresenter) {
+        self.presenter = presenter
 
         let layout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = space
@@ -38,68 +37,63 @@ class FeedViewController: UICollectionViewController, UICollectionViewDelegateFl
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupUI()
+        
+        presenter.delegate = self
+        presenter.reload()
+    }
+}
+
+private extension FeedViewController {
+    func setupUI() {
         loadCells([FeedCell.self])
         collectionView?.backgroundColor = .white
-        loadData()
     }
+}
 
-    func loadData() {
-        service.getStories { [weak self] result in
-            switch result {
-            case .value(let response):
-                let storiesViewModels = response.stories.compactMap { story -> StoryViewModel? in
-                    guard
-                        let url = URL(string: story.coverSrc),
-                        let ratio = story.aspectRatio.ratio
-                        else { return nil }
-                    return StoryViewModel(coverURL: url, ratio: ratio)
-                }
-                self?.updateViewMode(storiesViewModels)
-            case .error(let error):
-                // TODO: Handle error
-                break
-            }
-        }
-    }
-
-    private func updateViewMode(_ viewModel: [StoryViewModel]) {
-        DispatchQueue.main.async { [weak self] in
-            self?.storiesViewModels = viewModel
-        }
-    }
-
-    // MARK: UICollectionViewDataSource
-
+// MARK: UICollectionViewDataSource
+extension FeedViewController {
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return storiesViewModels.count
+        return stories.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = dequeueReusableCell(FeedCell.self, for: indexPath)
     
         // Configure the cell
-        cell.config(viewModel: storiesViewModels[indexPath.row])
+        cell.config(viewModel: stories[indexPath.row])
     
         return cell
     }
+}
 
-    // MARK: UICollectionViewDelegate
-
+// MARK: UICollectionViewDelegate
+extension FeedViewController {
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         return true
     }
 }
 
-extension FeedViewController {
-
+extension FeedViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let numberOfColumns: CGFloat = 2
         let width = (collectionView.bounds.width - space * (numberOfColumns + 1)) / numberOfColumns
-        let height = width / CGFloat(storiesViewModels[indexPath.row].ratio)
+        let height = width / CGFloat(stories[indexPath.row].ratio)
         return CGSize(width: width, height: height)
+    }
+}
+
+extension FeedViewController: FeedPresenterDelegate {
+    func feedLoadFailed(errorMessage: String) {
+        // TODO: Show alert
+        print("💔\(errorMessage)")
+    }
+
+    func feedLoaded(stories: [StoryViewModel]) {
+        self.stories = stories
     }
 }

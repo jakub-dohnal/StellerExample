@@ -27,6 +27,9 @@
 		A758C3FA22DEF82F00E4599C /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3F922DEF82F00E4599C /* FeedService.swift */; };
 		A758C3FD22DEF8B100E4599C /* StoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3FC22DEF8B100E4599C /* StoryResponse.swift */; };
 		A758C3FF22DEF8C800E4599C /* StoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3FE22DEF8C800E4599C /* StoriesResponse.swift */; };
+		A758C40122DEFAC500E4599C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C40022DEFAC500E4599C /* String.swift */; };
+		A758C40422DF01D000E4599C /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C40322DF01D000E4599C /* FeedPresenter.swift */; };
+		A758C40622DF03EC00E4599C /* FeedPresenterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C40522DF03EC00E4599C /* FeedPresenterImp.swift */; };
 		A7E2E48122DE04EF003207AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2E48022DE04EF003207AC /* AppDelegate.swift */; };
 		A7E2E48822DE04F1003207AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E2E48722DE04F1003207AC /* Assets.xcassets */; };
 		A7E2E48B22DE04F1003207AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E2E48922DE04F1003207AC /* LaunchScreen.storyboard */; };
@@ -72,6 +75,9 @@
 		A758C3F922DEF82F00E4599C /* FeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
 		A758C3FC22DEF8B100E4599C /* StoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryResponse.swift; sourceTree = "<group>"; };
 		A758C3FE22DEF8C800E4599C /* StoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesResponse.swift; sourceTree = "<group>"; };
+		A758C40022DEFAC500E4599C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		A758C40322DF01D000E4599C /* FeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenter.swift; sourceTree = "<group>"; };
+		A758C40522DF03EC00E4599C /* FeedPresenterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenterImp.swift; sourceTree = "<group>"; };
 		A7E2E47D22DE04EF003207AC /* StellerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StellerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E2E48022DE04EF003207AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7E2E48722DE04F1003207AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -160,6 +166,7 @@
 			children = (
 				A758C3E422DE78CF00E4599C /* CollectionCell+Registrable.swift */,
 				A758C3F122DE8C0500E4599C /* UIImageView+RemoteImage.swift */,
+				A758C40022DEFAC500E4599C /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -210,6 +217,15 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
+		A758C40222DF01B200E4599C /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				A758C40322DF01D000E4599C /* FeedPresenter.swift */,
+				A758C40522DF03EC00E4599C /* FeedPresenterImp.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
 		A7E2E47422DE04EF003207AC = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +249,7 @@
 		A7E2E47F22DE04EF003207AC /* StellerExample */ = {
 			isa = PBXGroup;
 			children = (
+				A758C40222DF01B200E4599C /* Presenters */,
 				A758C3F022DE884800E4599C /* ViewModels */,
 				A758C3E922DE81D400E4599C /* Networking */,
 				A758C3E622DE7BC100E4599C /* Extensions */,
@@ -417,6 +434,9 @@
 				A758C3F222DE8C0500E4599C /* UIImageView+RemoteImage.swift in Sources */,
 				A7E2E48122DE04EF003207AC /* AppDelegate.swift in Sources */,
 				A758C3FA22DEF82F00E4599C /* FeedService.swift in Sources */,
+				A758C40122DEFAC500E4599C /* String.swift in Sources */,
+				A758C40622DF03EC00E4599C /* FeedPresenterImp.swift in Sources */,
+				A758C40422DF01D000E4599C /* FeedPresenter.swift in Sources */,
 				A758C3FF22DEF8C800E4599C /* StoriesResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

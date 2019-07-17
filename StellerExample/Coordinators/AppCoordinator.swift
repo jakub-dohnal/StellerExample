@@ -25,7 +25,8 @@ private extension AppCoordinator {
     func showFeed() {
         let networkDispatcher = NetworkDispatcher()
         let service = FeedService(networkDispatcher: networkDispatcher)
-        let vc = FeedViewController(service: service)
+        let presenter = FeedPresenterImp(service: service)
+        let vc = FeedViewController(presenter: presenter)
         router.presentAsRoot(vc)
     }
 }
