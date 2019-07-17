@@ -1,5 +1,5 @@
 //
-//  FeedNetworkService.swift
+//  FeedInteractorImp.swift
 //  StellerExample
 //
 //  Created by Jakub Dohnal on 17/07/2019.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-struct FeedNetworkService: NetworkService {
+struct FeedInteractorImp: FeedInteractor {
 
-    let networkDispatcher: NetworkDispatcher
+    let service: NetworkService
 
     func getStories(completion: @escaping (Result<StoriesResponse>) -> Void) {
         let request = FeedRequest()
-        execute(request: request, completion: completion)
+        service.fetch(request: request, completion: completion)
     }
 }

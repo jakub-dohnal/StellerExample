@@ -13,18 +13,18 @@ enum Result<Value> {
     case error(Error)
 }
 
-protocol NetworkService {
-    var networkDispatcher: NetworkDispatcher { get }
-}
+struct NetworkService {
+    let networkDispatcher: NetworkDispatcher
 
-extension NetworkService {
-    
-    func execute<Value>(request: Request, completion: @escaping (Result<Value>) -> Void) where Value: Codable {
+    func fetch<Value>(request: Request, completion: @escaping (Result<Value>) -> Void) where Value: Codable {
         let request = FeedRequest()
         networkDispatcher.execute(request: request, success: { (data, _) in
-            // TODO: handle `try` by `do
-            let value = try! JSONDecoder().decode(Value.self, from: data)
-            completion(Result.value(value))
+            do {
+                let value = try JSONDecoder().decode(Value.self, from: data)
+                completion(Result.value(value))
+            } catch(let error) {
+                completion(Result.error(error))
+            }
         }) { (error, _) in
             completion(Result.error(error))
         }

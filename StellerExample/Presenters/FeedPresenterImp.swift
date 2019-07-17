@@ -10,16 +10,16 @@ import Foundation
 
 class FeedPresenterImp: FeedPresenter {
 
-    let service: FeedNetworkService
+    let interactor: FeedInteractor
 
     weak var delegate: FeedPresenterDelegate?
 
-    init(service: FeedNetworkService) {
-        self.service = service
+    init(interactor: FeedInteractor) {
+        self.interactor = interactor
     }
 
     func reload() {
-        service.getStories { [weak self] result in
+        interactor.getStories { [weak self] result in
             switch result {
             case .value(let response):
                 self?.handleSuccessLoadStories(response: response)
