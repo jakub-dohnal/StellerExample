@@ -10,12 +10,18 @@ import UIKit
 
 class FeedViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
-    let storiesViewModels: [StoryViewModel]
+    let service: FeedService
+
+    var storiesViewModels: [StoryViewModel] = [] {
+        didSet {
+            collectionView.reloadData()
+        }
+    }
 
     let space: CGFloat = 20
 
-    init(stories: [StoryViewModel]) {
-        storiesViewModels = stories
+    init(service: FeedService) {
+        self.service = service
 
         let layout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = space
@@ -34,6 +40,29 @@ class FeedViewController: UICollectionViewController, UICollectionViewDelegateFl
 
         loadCells([FeedCell.self])
         collectionView?.backgroundColor = .white
+        loadData()
+    }
+
+    func loadData() {
+        service.getStories { [weak self] result in
+            switch result {
+            case .value(let response):
+                let storiesViewModels = response.stories.compactMap { story -> StoryViewModel? in
+                    guard let url = URL(string: story.coverSrc) else { return nil }
+                    return StoryViewModel(coverURL: url)
+                }
+                self?.updateViewMode(storiesViewModels)
+            case .error(let error):
+                // TODO: Handle error
+                break
+            }
+        }
+    }
+
+    private func updateViewMode(_ viewModel: [StoryViewModel]) {
+        DispatchQueue.main.async { [weak self] in
+            self?.storiesViewModels = viewModel
+        }
     }
 
     // MARK: UICollectionViewDataSource
@@ -57,7 +86,6 @@ class FeedViewController: UICollectionViewController, UICollectionViewDelegateFl
 
     // MARK: UICollectionViewDelegate
 
-    // Uncomment this method to specify if the specified item should be selected
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         return true
     }
