@@ -48,8 +48,11 @@ class FeedViewController: UICollectionViewController, UICollectionViewDelegateFl
             switch result {
             case .value(let response):
                 let storiesViewModels = response.stories.compactMap { story -> StoryViewModel? in
-                    guard let url = URL(string: story.coverSrc) else { return nil }
-                    return StoryViewModel(coverURL: url)
+                    guard
+                        let url = URL(string: story.coverSrc),
+                        let ratio = story.aspectRatio.ratio
+                        else { return nil }
+                    return StoryViewModel(coverURL: url, ratio: ratio)
                 }
                 self?.updateViewMode(storiesViewModels)
             case .error(let error):
@@ -96,6 +99,7 @@ extension FeedViewController {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let numberOfColumns: CGFloat = 2
         let width = (collectionView.bounds.width - space * (numberOfColumns + 1)) / numberOfColumns
-        return CGSize(width: width, height: width)
+        let height = width / CGFloat(storiesViewModels[indexPath.row].ratio)
+        return CGSize(width: width, height: height)
     }
 }

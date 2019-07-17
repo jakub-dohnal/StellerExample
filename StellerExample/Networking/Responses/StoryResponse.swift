@@ -10,8 +10,10 @@ import Foundation
 
 struct StoryResponse: Codable {
     let coverSrc: String
+    let aspectRatio: String
 
     enum CodingKeys: String, CodingKey {
         case coverSrc = "cover_src"
+        case aspectRatio = "aspect_ratio"
     }
 }

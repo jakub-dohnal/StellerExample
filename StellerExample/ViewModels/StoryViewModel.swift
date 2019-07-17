@@ -10,4 +10,5 @@ import Foundation
 
 struct StoryViewModel {
     let coverURL: URL
+    let ratio: Double
 }
