@@ -28,6 +28,19 @@ private extension AppCoordinator {
         let interactor = FeedInteractorImp(service: networkService)
         let presenter = FeedPresenterImp(interactor: interactor)
         let vc = FeedViewController(presenter: presenter)
+
+        presenter.routerDelegate = self
         router.presentAsRoot(vc)
+    }
+
+    func showStory(story: StoryViewModel, from stories: [StoryViewModel]) {
+
+    }
+}
+
+
+extension AppCoordinator: FeedPresenterRouterDelegate {
+    func present(story: StoryViewModel, from stories: [StoryViewModel]) {
+        showStory(story: story, from: stories)
     }
 }

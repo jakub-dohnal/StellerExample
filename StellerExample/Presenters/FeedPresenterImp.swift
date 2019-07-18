@@ -13,6 +13,9 @@ class FeedPresenterImp: FeedPresenter {
     let interactor: FeedInteractor
 
     weak var delegate: FeedPresenterDelegate?
+    weak var routerDelegate: FeedPresenterRouterDelegate?
+
+    var stories: [StoryViewModel] = []
 
     init(interactor: FeedInteractor) {
         self.interactor = interactor
@@ -28,19 +31,24 @@ class FeedPresenterImp: FeedPresenter {
             }
         }
     }
+
+    func present(story: StoryViewModel) {
+        routerDelegate?.present(story: story, from: stories)
+    }
 }
 
 private extension FeedPresenterImp {
     func handleSuccessLoadStories(response: StoriesResponse) {
-        let storiesViewModels = response.stories.compactMap { story -> StoryViewModel? in
+        let stories = response.stories.compactMap { story -> StoryViewModel? in
             guard
                 let url = URL(string: story.coverSrc),
                 let ratio = story.aspectRatio.ratio
                 else { return nil }
             return StoryViewModel(coverURL: url, ratio: ratio)
         }
+        self.stories = stories
         DispatchQueue.main.async { [weak self] in
-            self?.delegate?.feedLoaded(stories: storiesViewModels)
+            self?.delegate?.feedLoaded(stories: stories)
         }
     }
 

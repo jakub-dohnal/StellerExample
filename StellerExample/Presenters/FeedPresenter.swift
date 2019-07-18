@@ -13,7 +13,15 @@ protocol FeedPresenterDelegate: class {
     func feedLoadFailed(errorMessage: String)
 }
 
+protocol FeedPresenterRouterDelegate: class {
+    func present(story: StoryViewModel, from: [StoryViewModel])
+}
+
 protocol FeedPresenter: class {
     func reload()
+    func present(story: StoryViewModel)
     var delegate: FeedPresenterDelegate? { get set }
+    var routerDelegate: FeedPresenterRouterDelegate? { get set }
 }
+
+

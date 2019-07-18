@@ -76,6 +76,11 @@ extension FeedViewController {
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         return true
     }
+
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let story = stories[indexPath.row]
+        presenter.present(story: story)
+    }
 }
 
 extension FeedViewController: UICollectionViewDelegateFlowLayout {
