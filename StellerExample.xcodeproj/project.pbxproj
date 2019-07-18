@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A71F47E222E1278C00B4BBF9 /* StoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47E122E1278C00B4BBF9 /* StoriesPresenter.swift */; };
+		A71F47E422E1279F00B4BBF9 /* StoriesPresenterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47E322E1279F00B4BBF9 /* StoriesPresenterImp.swift */; };
 		A758C3D022DE5F5300E4599C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3CF22DE5F5300E4599C /* AppCoordinator.swift */; };
 		A758C3D222DE5F9200E4599C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3D122DE5F9200E4599C /* Coordinator.swift */; };
 		A758C3D522DE606300E4599C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3D422DE606300E4599C /* Router.swift */; };
@@ -31,6 +33,7 @@
 		A758C40622DF03EC00E4599C /* FeedPresenterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C40522DF03EC00E4599C /* FeedPresenterImp.swift */; };
 		A758C40B22DF101B00E4599C /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C40A22DF101B00E4599C /* FeedInteractor.swift */; };
 		A758C40D22DF102800E4599C /* FeedInteractorImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C40C22DF102800E4599C /* FeedInteractorImp.swift */; };
+		A758C41522E0F0D800E4599C /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C41422E0F0D800E4599C /* StoriesViewController.swift */; };
 		A7E2E48122DE04EF003207AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2E48022DE04EF003207AC /* AppDelegate.swift */; };
 		A7E2E48822DE04F1003207AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E2E48722DE04F1003207AC /* Assets.xcassets */; };
 		A7E2E48B22DE04F1003207AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E2E48922DE04F1003207AC /* LaunchScreen.storyboard */; };
@@ -56,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A71F47E122E1278C00B4BBF9 /* StoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesPresenter.swift; sourceTree = "<group>"; };
+		A71F47E322E1279F00B4BBF9 /* StoriesPresenterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesPresenterImp.swift; sourceTree = "<group>"; };
 		A758C3CF22DE5F5300E4599C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		A758C3D122DE5F9200E4599C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A758C3D422DE606300E4599C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -80,6 +85,7 @@
 		A758C40522DF03EC00E4599C /* FeedPresenterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenterImp.swift; sourceTree = "<group>"; };
 		A758C40A22DF101B00E4599C /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
 		A758C40C22DF102800E4599C /* FeedInteractorImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractorImp.swift; sourceTree = "<group>"; };
+		A758C41422E0F0D800E4599C /* StoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewController.swift; sourceTree = "<group>"; };
 		A7E2E47D22DE04EF003207AC /* StellerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StellerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E2E48022DE04EF003207AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7E2E48722DE04F1003207AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +127,7 @@
 		A758C3CC22DE5EAB00E4599C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				A758C41622E0F0E600E4599C /* Stories */,
 				A758C3CE22DE5F0A00E4599C /* Feed */,
 			);
 			path = Screens;
@@ -215,6 +222,8 @@
 			children = (
 				A758C40322DF01D000E4599C /* FeedPresenter.swift */,
 				A758C40522DF03EC00E4599C /* FeedPresenterImp.swift */,
+				A71F47E122E1278C00B4BBF9 /* StoriesPresenter.swift */,
+				A71F47E322E1279F00B4BBF9 /* StoriesPresenterImp.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -226,6 +235,14 @@
 				A758C40C22DF102800E4599C /* FeedInteractorImp.swift */,
 			);
 			path = Interactors;
+			sourceTree = "<group>";
+		};
+		A758C41622E0F0E600E4599C /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				A758C41422E0F0D800E4599C /* StoriesViewController.swift */,
+			);
+			path = Stories;
 			sourceTree = "<group>";
 		};
 		A7E2E47422DE04EF003207AC = {
@@ -422,9 +439,11 @@
 				A758C40B22DF101B00E4599C /* FeedInteractor.swift in Sources */,
 				A758C3DE22DE6D8400E4599C /* FeedCell.swift in Sources */,
 				A758C3ED22DE868A00E4599C /* Request.swift in Sources */,
+				A71F47E422E1279F00B4BBF9 /* StoriesPresenterImp.swift in Sources */,
 				A758C3D222DE5F9200E4599C /* Coordinator.swift in Sources */,
 				A758C3D022DE5F5300E4599C /* AppCoordinator.swift in Sources */,
 				A758C3EB22DE82A000E4599C /* NetworkDispatcher.swift in Sources */,
+				A758C41522E0F0D800E4599C /* StoriesViewController.swift in Sources */,
 				A758C3D522DE606300E4599C /* Router.swift in Sources */,
 				A758C40D22DF102800E4599C /* FeedInteractorImp.swift in Sources */,
 				A758C3FD22DEF8B100E4599C /* StoryResponse.swift in Sources */,
@@ -438,6 +457,7 @@
 				A758C3EF22DE880300E4599C /* StoryViewModel.swift in Sources */,
 				A758C3F222DE8C0500E4599C /* UIImageView+RemoteImage.swift in Sources */,
 				A7E2E48122DE04EF003207AC /* AppDelegate.swift in Sources */,
+				A71F47E222E1278C00B4BBF9 /* StoriesPresenter.swift in Sources */,
 				A758C40122DEFAC500E4599C /* String.swift in Sources */,
 				A758C40622DF03EC00E4599C /* FeedPresenterImp.swift in Sources */,
 				A758C40422DF01D000E4599C /* FeedPresenter.swift in Sources */,
@@ -609,6 +629,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J4P6DQ3UZ;
 				INFOPLIST_FILE = StellerExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -626,6 +647,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6J4P6DQ3UZ;
 				INFOPLIST_FILE = StellerExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
