@@ -32,8 +32,8 @@ class FeedPresenterImp: FeedPresenter {
         }
     }
 
-    func present(story: StoryViewModel) {
-        routerDelegate?.present(story: story, from: stories)
+    func present(storyAt index: Int) {
+        routerDelegate?.present(storyAt: index, from: stories)
     }
 }
 
@@ -48,7 +48,7 @@ private extension FeedPresenterImp {
         }
         self.stories = stories
         DispatchQueue.main.async { [weak self] in
-            self?.delegate?.feedLoaded(stories: stories)
+            self?.delegate?.feedDidLoad()
         }
     }
 

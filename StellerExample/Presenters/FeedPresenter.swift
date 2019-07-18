@@ -9,17 +9,19 @@
 import Foundation
 
 protocol FeedPresenterDelegate: class {
-    func feedLoaded(stories: [StoryViewModel])
+    func feedDidLoad()
     func feedLoadFailed(errorMessage: String)
 }
 
 protocol FeedPresenterRouterDelegate: class {
-    func present(story: StoryViewModel, from: [StoryViewModel])
+    func present(storyAt: Int, from: [StoryViewModel])
 }
 
 protocol FeedPresenter: class {
     func reload()
-    func present(story: StoryViewModel)
+    func present(storyAt: Int)
+
+    var stories: [StoryViewModel] { get }
     var delegate: FeedPresenterDelegate? { get set }
     var routerDelegate: FeedPresenterRouterDelegate? { get set }
 }

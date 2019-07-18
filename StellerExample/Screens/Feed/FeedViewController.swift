@@ -13,12 +13,6 @@ class FeedViewController: UICollectionViewController {
     let space: CGFloat = 20
     let presenter: FeedPresenter
 
-    var stories: [StoryViewModel] = [] {
-        didSet {
-            collectionView.reloadData()
-        }
-    }
-
     init(presenter: FeedPresenter) {
         self.presenter = presenter
 
@@ -58,14 +52,14 @@ extension FeedViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return stories.count
+        return presenter.stories.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = dequeueReusableCell(FeedCell.self, for: indexPath)
     
         // Configure the cell
-        cell.config(viewModel: stories[indexPath.row])
+        cell.config(viewModel: presenter.stories[indexPath.row])
     
         return cell
     }
@@ -78,8 +72,7 @@ extension FeedViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let story = stories[indexPath.row]
-        presenter.present(story: story)
+        presenter.present(storyAt: indexPath.row)
     }
 }
 
@@ -87,7 +80,7 @@ extension FeedViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let numberOfColumns: CGFloat = 2
         let width = (collectionView.bounds.width - space * (numberOfColumns + 1)) / numberOfColumns
-        let height = width / CGFloat(stories[indexPath.row].ratio)
+        let height = width / CGFloat(presenter.stories[indexPath.row].ratio)
         return CGSize(width: width, height: height)
     }
 }
@@ -98,7 +91,7 @@ extension FeedViewController: FeedPresenterDelegate {
         print("💔\(errorMessage)")
     }
 
-    func feedLoaded(stories: [StoryViewModel]) {
-        self.stories = stories
+    func feedDidLoad() {
+        collectionView.reloadData()
     }
 }
