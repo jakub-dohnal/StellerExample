@@ -27,4 +27,9 @@ final class RouterImp: Router {
         window.rootViewController = viewController
         presentedViewController = viewController
     }
+
+    func dissmiss(animated: Bool, completion: (() -> Void)?) {
+        presentedViewController?.dismiss(animated: animated, completion: completion)
+        presentedViewController = presentedViewController?.presentingViewController
+    }
 }
