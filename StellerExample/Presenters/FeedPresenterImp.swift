@@ -45,7 +45,7 @@ private extension FeedPresenterImp {
                 let ratio = story.aspectRatio.ratio
                 else { return nil }
             // TODO zmenit
-            let dispatcher = NetworkDispatcher()
+            let dispatcher = NetworkDispatcherImp()
             return StoryViewModelImp(coverURL: url, ratio: ratio, dispatcher: dispatcher)
         }
         self.stories = stories

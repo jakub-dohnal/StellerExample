@@ -23,7 +23,7 @@ final class AppCoordinator: Coordinator {
 
 private extension AppCoordinator {
     func showFeed() {
-        let networkDispatcher = NetworkDispatcher()
+        let networkDispatcher = NetworkDispatcherImp()
         let networkService = NetworkServiceImp(networkDispatcher: networkDispatcher)
         let interactor = FeedInteractorImp(service: networkService)
         let presenter = FeedPresenterImp(interactor: interactor)

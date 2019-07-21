@@ -13,6 +13,7 @@
 		A71F47EA22E19B1B00B4BBF9 /* InfoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47E922E19B1B00B4BBF9 /* InfoButtonView.swift */; };
 		A71F47EC22E1CE9200B4BBF9 /* StoryViewModelImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47EB22E1CE9200B4BBF9 /* StoryViewModelImp.swift */; };
 		A71F47EE22E49CD600B4BBF9 /* NetworkServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47ED22E49CD600B4BBF9 /* NetworkServiceImp.swift */; };
+		A71F47F022E49E4800B4BBF9 /* NetworkDispatcherImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47EF22E49E4800B4BBF9 /* NetworkDispatcherImp.swift */; };
 		A758C3D022DE5F5300E4599C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3CF22DE5F5300E4599C /* AppCoordinator.swift */; };
 		A758C3D222DE5F9200E4599C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3D122DE5F9200E4599C /* Coordinator.swift */; };
 		A758C3D522DE606300E4599C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3D422DE606300E4599C /* Router.swift */; };
@@ -68,6 +69,7 @@
 		A71F47E922E19B1B00B4BBF9 /* InfoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoButtonView.swift; sourceTree = "<group>"; };
 		A71F47EB22E1CE9200B4BBF9 /* StoryViewModelImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewModelImp.swift; sourceTree = "<group>"; };
 		A71F47ED22E49CD600B4BBF9 /* NetworkServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImp.swift; sourceTree = "<group>"; };
+		A71F47EF22E49E4800B4BBF9 /* NetworkDispatcherImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcherImp.swift; sourceTree = "<group>"; };
 		A758C3CF22DE5F5300E4599C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		A758C3D122DE5F9200E4599C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A758C3D422DE606300E4599C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				A758C3FB22DEF89900E4599C /* Responses */,
 				A758C3F522DEF72C00E4599C /* Requests */,
 				A758C3EA22DE82A000E4599C /* NetworkDispatcher.swift */,
+				A71F47EF22E49E4800B4BBF9 /* NetworkDispatcherImp.swift */,
 				A758C3F722DEF80000E4599C /* NetworkService.swift */,
 				A71F47ED22E49CD600B4BBF9 /* NetworkServiceImp.swift */,
 			);
@@ -479,6 +482,7 @@
 				A7E2E48122DE04EF003207AC /* AppDelegate.swift in Sources */,
 				A71F47E222E1278C00B4BBF9 /* StoriesPresenter.swift in Sources */,
 				A758C40122DEFAC500E4599C /* String.swift in Sources */,
+				A71F47F022E49E4800B4BBF9 /* NetworkDispatcherImp.swift in Sources */,
 				A758C40622DF03EC00E4599C /* FeedPresenterImp.swift in Sources */,
 				A758C40422DF01D000E4599C /* FeedPresenter.swift in Sources */,
 				A758C3FF22DEF8C800E4599C /* StoriesResponse.swift in Sources */,
