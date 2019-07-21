@@ -18,42 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jVY-zX-Cfx">
-                                <rect key="frame" x="163.5" y="429.5" width="87" height="47.5"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tWf-08-pi3">
-                                        <rect key="frame" x="3" y="3" width="81" height="41.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMi-eH-eAR">
-                                                <rect key="frame" x="5" y="5" width="71" height="31.5"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                                <color key="textColor" name="gridColor" catalog="System" colorSpace="catalog"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="HMi-eH-eAR" secondAttribute="trailing" constant="5" id="3Ic-Nh-VMs"/>
-                                            <constraint firstAttribute="bottom" secondItem="HMi-eH-eAR" secondAttribute="bottom" constant="5" id="Clc-oQ-X5l"/>
-                                            <constraint firstItem="HMi-eH-eAR" firstAttribute="top" secondItem="tWf-08-pi3" secondAttribute="top" constant="5" id="M6a-uJ-X9I"/>
-                                            <constraint firstItem="HMi-eH-eAR" firstAttribute="leading" secondItem="tWf-08-pi3" secondAttribute="leading" constant="5" id="yWG-YG-zfI"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="tWf-08-pi3" secondAttribute="trailing" constant="3" id="Ebj-kC-XeY"/>
-                                    <constraint firstAttribute="bottom" secondItem="tWf-08-pi3" secondAttribute="bottom" constant="3" id="SRM-FZ-MNq"/>
-                                    <constraint firstItem="tWf-08-pi3" firstAttribute="leading" secondItem="jVY-zX-Cfx" secondAttribute="leading" constant="3" id="Xnb-A3-Sjb"/>
-                                    <constraint firstItem="tWf-08-pi3" firstAttribute="top" secondItem="jVY-zX-Cfx" secondAttribute="top" constant="3" id="nu8-kr-v21"/>
-                                </constraints>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMi-eH-eAR">
+                                <rect key="frame" x="10" y="437.5" width="394" height="31.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jVY-zX-Cfx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5xH-cU-M2d"/>
-                            <constraint firstItem="jVY-zX-Cfx" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="eRN-KO-drQ"/>
+                            <constraint firstItem="HMi-eH-eAR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="DUf-bp-vmc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HMi-eH-eAR" secondAttribute="trailing" constant="10" id="Ste-Ae-b0v"/>
+                            <constraint firstItem="HMi-eH-eAR" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="tRq-Li-hQ2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
