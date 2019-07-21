@@ -13,6 +13,9 @@ class FeedViewController: UICollectionViewController {
     let space: CGFloat = 20
     let presenter: FeedPresenter
 
+    private var activityView: UIActivityIndicatorView!
+    private var infoFailedView: InfoButtonView!
+
     init(presenter: FeedPresenter) {
         self.presenter = presenter
 
@@ -28,12 +31,27 @@ class FeedViewController: UICollectionViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    override func loadView() {
+        super.loadView()
+
+        activityView = UIActivityIndicatorView(style: .gray)
+        infoFailedView = InfoButtonView()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
         
         presenter.delegate = self
+        reload()
+    }
+
+    @objc
+    func reload() {
+        activityView.startAnimating()
+        collectionView.backgroundView = activityView
+
         presenter.reload()
     }
 }
@@ -87,11 +105,16 @@ extension FeedViewController: UICollectionViewDelegateFlowLayout {
 
 extension FeedViewController: FeedPresenterDelegate {
     func feedLoadFailed(errorMessage: String) {
-        // TODO: Show alert
-        print("💔\(errorMessage)")
+        infoFailedView.labelText = errorMessage
+        infoFailedView.buttonText = NSLocalizedString("Load Again", comment: "")
+        infoFailedView.buttonPressAction = { [weak self] in
+            self?.reload()
+        }
+        collectionView.backgroundView = infoFailedView
     }
 
     func feedDidLoad() {
+        collectionView.backgroundView = nil
         collectionView.reloadData()
     }
 }
