@@ -44,7 +44,9 @@ private extension FeedPresenterImp {
                 let url = URL(string: story.coverSrc),
                 let ratio = story.aspectRatio.ratio
                 else { return nil }
-            return StoryViewModel(coverURL: url, ratio: ratio)
+            // TODO zmenit
+            let dispatcher = NetworkDispatcher()
+            return StoryViewModelImp(coverURL: url, ratio: ratio, dispatcher: dispatcher)
         }
         self.stories = stories
         DispatchQueue.main.async { [weak self] in

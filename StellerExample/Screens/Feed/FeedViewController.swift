@@ -40,7 +40,7 @@ class FeedViewController: UICollectionViewController {
 
 private extension FeedViewController {
     func setupUI() {
-        loadCells([FeedCell.self])
+        loadCells([StoryCell.self])
         collectionView?.backgroundColor = .white
     }
 }
@@ -56,7 +56,7 @@ extension FeedViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = dequeueReusableCell(FeedCell.self, for: indexPath)
+        let cell = dequeueReusableCell(StoryCell.self, for: indexPath)
     
         // Configure the cell
         cell.config(viewModel: presenter.stories[indexPath.row])

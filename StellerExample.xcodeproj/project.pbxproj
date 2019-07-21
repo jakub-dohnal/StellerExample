@@ -9,21 +9,22 @@
 /* Begin PBXBuildFile section */
 		A71F47E222E1278C00B4BBF9 /* StoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47E122E1278C00B4BBF9 /* StoriesPresenter.swift */; };
 		A71F47E422E1279F00B4BBF9 /* StoriesPresenterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47E322E1279F00B4BBF9 /* StoriesPresenterImp.swift */; };
+		A71F47E822E12C0900B4BBF9 /* URL+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47E722E12C0900B4BBF9 /* URL+Request.swift */; };
+		A71F47EC22E1CE9200B4BBF9 /* StoryViewModelImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47EB22E1CE9200B4BBF9 /* StoryViewModelImp.swift */; };
 		A758C3D022DE5F5300E4599C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3CF22DE5F5300E4599C /* AppCoordinator.swift */; };
 		A758C3D222DE5F9200E4599C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3D122DE5F9200E4599C /* Coordinator.swift */; };
 		A758C3D522DE606300E4599C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3D422DE606300E4599C /* Router.swift */; };
 		A758C3D722DE612E00E4599C /* RouterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3D622DE612E00E4599C /* RouterImp.swift */; };
 		A758C3D922DE673E00E4599C /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3D822DE673E00E4599C /* FeedViewController.swift */; };
 		A758C3DB22DE6C8000E4599C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A758C3DA22DE6C8000E4599C /* Main.storyboard */; };
-		A758C3DE22DE6D8400E4599C /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3DC22DE6D8400E4599C /* FeedCell.swift */; };
-		A758C3DF22DE6D8400E4599C /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A758C3DD22DE6D8400E4599C /* FeedCell.xib */; };
+		A758C3DE22DE6D8400E4599C /* StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3DC22DE6D8400E4599C /* StoryCell.swift */; };
+		A758C3DF22DE6D8400E4599C /* StoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A758C3DD22DE6D8400E4599C /* StoryCell.xib */; };
 		A758C3E322DE755700E4599C /* Loudable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3E222DE755700E4599C /* Loudable.swift */; };
 		A758C3E522DE78CF00E4599C /* CollectionCell+Registrable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3E422DE78CF00E4599C /* CollectionCell+Registrable.swift */; };
 		A758C3E822DE7D2800E4599C /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3E722DE7D2800E4599C /* Reusable.swift */; };
 		A758C3EB22DE82A000E4599C /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3EA22DE82A000E4599C /* NetworkDispatcher.swift */; };
 		A758C3ED22DE868A00E4599C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3EC22DE868A00E4599C /* Request.swift */; };
 		A758C3EF22DE880300E4599C /* StoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3EE22DE880300E4599C /* StoryViewModel.swift */; };
-		A758C3F222DE8C0500E4599C /* UIImageView+RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3F122DE8C0500E4599C /* UIImageView+RemoteImage.swift */; };
 		A758C3F422DE9B9500E4599C /* FeedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3F322DE9B9500E4599C /* FeedRequest.swift */; };
 		A758C3F822DEF80000E4599C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3F722DEF80000E4599C /* NetworkService.swift */; };
 		A758C3FD22DEF8B100E4599C /* StoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3FC22DEF8B100E4599C /* StoryResponse.swift */; };
@@ -61,21 +62,22 @@
 /* Begin PBXFileReference section */
 		A71F47E122E1278C00B4BBF9 /* StoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesPresenter.swift; sourceTree = "<group>"; };
 		A71F47E322E1279F00B4BBF9 /* StoriesPresenterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesPresenterImp.swift; sourceTree = "<group>"; };
+		A71F47E722E12C0900B4BBF9 /* URL+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Request.swift"; sourceTree = "<group>"; };
+		A71F47EB22E1CE9200B4BBF9 /* StoryViewModelImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewModelImp.swift; sourceTree = "<group>"; };
 		A758C3CF22DE5F5300E4599C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		A758C3D122DE5F9200E4599C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A758C3D422DE606300E4599C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A758C3D622DE612E00E4599C /* RouterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterImp.swift; sourceTree = "<group>"; };
 		A758C3D822DE673E00E4599C /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		A758C3DA22DE6C8000E4599C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		A758C3DC22DE6D8400E4599C /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
-		A758C3DD22DE6D8400E4599C /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
+		A758C3DC22DE6D8400E4599C /* StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCell.swift; sourceTree = "<group>"; };
+		A758C3DD22DE6D8400E4599C /* StoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCell.xib; sourceTree = "<group>"; };
 		A758C3E222DE755700E4599C /* Loudable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loudable.swift; sourceTree = "<group>"; };
 		A758C3E422DE78CF00E4599C /* CollectionCell+Registrable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CollectionCell+Registrable.swift"; path = "StellerExample/Extensions/CollectionCell+Registrable.swift"; sourceTree = SOURCE_ROOT; };
 		A758C3E722DE7D2800E4599C /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		A758C3EA22DE82A000E4599C /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
 		A758C3EC22DE868A00E4599C /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		A758C3EE22DE880300E4599C /* StoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewModel.swift; sourceTree = "<group>"; };
-		A758C3F122DE8C0500E4599C /* UIImageView+RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+RemoteImage.swift"; sourceTree = "<group>"; };
 		A758C3F322DE9B9500E4599C /* FeedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRequest.swift; sourceTree = "<group>"; };
 		A758C3F722DEF80000E4599C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		A758C3FC22DEF8B100E4599C /* StoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryResponse.swift; sourceTree = "<group>"; };
@@ -124,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A71F47E622E12A5100B4BBF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A758C3DC22DE6D8400E4599C /* StoryCell.swift */,
+				A758C3DD22DE6D8400E4599C /* StoryCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A758C3CC22DE5EAB00E4599C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,8 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				A758C3D822DE673E00E4599C /* FeedViewController.swift */,
-				A758C3DC22DE6D8400E4599C /* FeedCell.swift */,
-				A758C3DD22DE6D8400E4599C /* FeedCell.xib */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -174,8 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				A758C3E422DE78CF00E4599C /* CollectionCell+Registrable.swift */,
-				A758C3F122DE8C0500E4599C /* UIImageView+RemoteImage.swift */,
 				A758C40022DEFAC500E4599C /* String.swift */,
+				A71F47E722E12C0900B4BBF9 /* URL+Request.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -195,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				A758C3EE22DE880300E4599C /* StoryViewModel.swift */,
+				A71F47EB22E1CE9200B4BBF9 /* StoryViewModelImp.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -268,6 +278,7 @@
 		A7E2E47F22DE04EF003207AC /* StellerExample */ = {
 			isa = PBXGroup;
 			children = (
+				A71F47E622E12A5100B4BBF9 /* Views */,
 				A758C40922DF100B00E4599C /* Interactors */,
 				A758C40222DF01B200E4599C /* Presenters */,
 				A758C3F022DE884800E4599C /* ViewModels */,
@@ -409,7 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A758C3DB22DE6C8000E4599C /* Main.storyboard in Resources */,
-				A758C3DF22DE6D8400E4599C /* FeedCell.xib in Resources */,
+				A758C3DF22DE6D8400E4599C /* StoryCell.xib in Resources */,
 				A7E2E48B22DE04F1003207AC /* LaunchScreen.storyboard in Resources */,
 				A7E2E48822DE04F1003207AC /* Assets.xcassets in Resources */,
 			);
@@ -437,7 +448,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A758C40B22DF101B00E4599C /* FeedInteractor.swift in Sources */,
-				A758C3DE22DE6D8400E4599C /* FeedCell.swift in Sources */,
+				A71F47EC22E1CE9200B4BBF9 /* StoryViewModelImp.swift in Sources */,
+				A758C3DE22DE6D8400E4599C /* StoryCell.swift in Sources */,
 				A758C3ED22DE868A00E4599C /* Request.swift in Sources */,
 				A71F47E422E1279F00B4BBF9 /* StoriesPresenterImp.swift in Sources */,
 				A758C3D222DE5F9200E4599C /* Coordinator.swift in Sources */,
@@ -449,13 +461,13 @@
 				A758C3FD22DEF8B100E4599C /* StoryResponse.swift in Sources */,
 				A758C3E822DE7D2800E4599C /* Reusable.swift in Sources */,
 				A758C3E322DE755700E4599C /* Loudable.swift in Sources */,
+				A71F47E822E12C0900B4BBF9 /* URL+Request.swift in Sources */,
 				A758C3D722DE612E00E4599C /* RouterImp.swift in Sources */,
 				A758C3F822DEF80000E4599C /* NetworkService.swift in Sources */,
 				A758C3D922DE673E00E4599C /* FeedViewController.swift in Sources */,
 				A758C3E522DE78CF00E4599C /* CollectionCell+Registrable.swift in Sources */,
 				A758C3F422DE9B9500E4599C /* FeedRequest.swift in Sources */,
 				A758C3EF22DE880300E4599C /* StoryViewModel.swift in Sources */,
-				A758C3F222DE8C0500E4599C /* UIImageView+RemoteImage.swift in Sources */,
 				A7E2E48122DE04EF003207AC /* AppDelegate.swift in Sources */,
 				A71F47E222E1278C00B4BBF9 /* StoriesPresenter.swift in Sources */,
 				A758C40122DEFAC500E4599C /* String.swift in Sources */,

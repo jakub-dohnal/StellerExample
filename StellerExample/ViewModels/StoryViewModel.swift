@@ -8,7 +8,15 @@
 
 import Foundation
 
-struct StoryViewModel {
-    let coverURL: URL
-    let ratio: Double
+protocol StoryViewModelDelegate: class {
+    func didLoadImage()
+    func faildLoadImage()
+}
+
+protocol StoryViewModel: class {
+    var ratio: Double { get }
+    var imageData: Data? { get }
+    var delegate: StoryViewModelDelegate? { get set }
+
+    func loadImage()
 }
