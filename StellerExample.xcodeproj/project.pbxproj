@@ -12,6 +12,7 @@
 		A71F47E822E12C0900B4BBF9 /* URL+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47E722E12C0900B4BBF9 /* URL+Request.swift */; };
 		A71F47EA22E19B1B00B4BBF9 /* InfoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47E922E19B1B00B4BBF9 /* InfoButtonView.swift */; };
 		A71F47EC22E1CE9200B4BBF9 /* StoryViewModelImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47EB22E1CE9200B4BBF9 /* StoryViewModelImp.swift */; };
+		A71F47EE22E49CD600B4BBF9 /* NetworkServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47ED22E49CD600B4BBF9 /* NetworkServiceImp.swift */; };
 		A758C3D022DE5F5300E4599C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3CF22DE5F5300E4599C /* AppCoordinator.swift */; };
 		A758C3D222DE5F9200E4599C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3D122DE5F9200E4599C /* Coordinator.swift */; };
 		A758C3D522DE606300E4599C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3D422DE606300E4599C /* Router.swift */; };
@@ -66,6 +67,7 @@
 		A71F47E722E12C0900B4BBF9 /* URL+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Request.swift"; sourceTree = "<group>"; };
 		A71F47E922E19B1B00B4BBF9 /* InfoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoButtonView.swift; sourceTree = "<group>"; };
 		A71F47EB22E1CE9200B4BBF9 /* StoryViewModelImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewModelImp.swift; sourceTree = "<group>"; };
+		A71F47ED22E49CD600B4BBF9 /* NetworkServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImp.swift; sourceTree = "<group>"; };
 		A758C3CF22DE5F5300E4599C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		A758C3D122DE5F9200E4599C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A758C3D422DE606300E4599C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				A758C3F522DEF72C00E4599C /* Requests */,
 				A758C3EA22DE82A000E4599C /* NetworkDispatcher.swift */,
 				A758C3F722DEF80000E4599C /* NetworkService.swift */,
+				A71F47ED22E49CD600B4BBF9 /* NetworkServiceImp.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 			files = (
 				A758C40B22DF101B00E4599C /* FeedInteractor.swift in Sources */,
 				A71F47EC22E1CE9200B4BBF9 /* StoryViewModelImp.swift in Sources */,
+				A71F47EE22E49CD600B4BBF9 /* NetworkServiceImp.swift in Sources */,
 				A758C3DE22DE6D8400E4599C /* StoryCell.swift in Sources */,
 				A758C3ED22DE868A00E4599C /* Request.swift in Sources */,
 				A71F47E422E1279F00B4BBF9 /* StoriesPresenterImp.swift in Sources */,
