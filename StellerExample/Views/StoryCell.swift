@@ -12,7 +12,7 @@ class StoryCell: RegistrableCell {
 
     @IBOutlet private weak var storyImageView: UIImageView!
     @IBOutlet private weak var activityIndicatorView: UIActivityIndicatorView!
-    private var viewModel: StoryPresenter?
+    private var presenter: StoryPresenter?
 
 
     override func awakeFromNib() {
@@ -21,7 +21,7 @@ class StoryCell: RegistrableCell {
     }
 
     func config(viewModel: StoryPresenter) {
-        self.viewModel = viewModel
+        self.presenter = viewModel
 
         startActivity()
 
@@ -30,8 +30,8 @@ class StoryCell: RegistrableCell {
     }
 
     override func prepareForReuse() {
-        viewModel?.delegate = nil
-        viewModel = nil
+        presenter?.delegate = nil
+        presenter = nil
         storyImageView.image = nil
     }
 
@@ -60,7 +60,7 @@ extension StoryCell: StoryPresenterDelegate {
     func didLoadImage() {
         stopActivity()
 
-        guard let data = viewModel?.imageData, let image = UIImage(data: data) else {
+        guard let data = presenter?.imageData, let image = UIImage(data: data) else {
             storyImageView.image = UIImage(named: "placeholder")
             return
         }
