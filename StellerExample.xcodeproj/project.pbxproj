@@ -41,7 +41,7 @@
 		A7E2E48122DE04EF003207AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2E48022DE04EF003207AC /* AppDelegate.swift */; };
 		A7E2E48822DE04F1003207AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E2E48722DE04F1003207AC /* Assets.xcassets */; };
 		A7E2E48B22DE04F1003207AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E2E48922DE04F1003207AC /* LaunchScreen.storyboard */; };
-		A7E2E49622DE04F1003207AC /* StellerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2E49522DE04F1003207AC /* StellerExampleTests.swift */; };
+		A7E2E49622DE04F1003207AC /* FeedInteractorImpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2E49522DE04F1003207AC /* FeedInteractorImpTests.swift */; };
 		A7E2E4A122DE04F1003207AC /* StellerExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2E4A022DE04F1003207AC /* StellerExampleUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -100,7 +100,7 @@
 		A7E2E48A22DE04F1003207AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7E2E48C22DE04F1003207AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7E2E49122DE04F1003207AC /* StellerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StellerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7E2E49522DE04F1003207AC /* StellerExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellerExampleTests.swift; sourceTree = "<group>"; };
+		A7E2E49522DE04F1003207AC /* FeedInteractorImpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractorImpTests.swift; sourceTree = "<group>"; };
 		A7E2E49722DE04F1003207AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7E2E49C22DE04F1003207AC /* StellerExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StellerExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E2E4A022DE04F1003207AC /* StellerExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellerExampleUITests.swift; sourceTree = "<group>"; };
@@ -309,7 +309,7 @@
 		A7E2E49422DE04F1003207AC /* StellerExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				A7E2E49522DE04F1003207AC /* StellerExampleTests.swift */,
+				A7E2E49522DE04F1003207AC /* FeedInteractorImpTests.swift */,
 				A7E2E49722DE04F1003207AC /* Info.plist */,
 			);
 			path = StellerExampleTests;
@@ -493,7 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7E2E49622DE04F1003207AC /* StellerExampleTests.swift in Sources */,
+				A7E2E49622DE04F1003207AC /* FeedInteractorImpTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
