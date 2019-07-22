@@ -11,25 +11,30 @@ import UIKit
 final class RouterImp: Router {
 
     private let window: UIWindow
-    private var presentedViewController: UIViewController?
+    private var viewControllerStack: [UIViewController]
 
     init(window: UIWindow) {
         self.window = window
-        self.presentedViewController = window.rootViewController
+
+        if let viewController = window.rootViewController {
+            self.viewControllerStack = [viewController]
+        } else {
+            self.viewControllerStack = []
+        }
     }
 
     func present(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)?) {
-        presentedViewController?.present(viewController, animated: animated, completion: completion)
-        presentedViewController = viewController
+        viewControllerStack.last?.present(viewController, animated: animated, completion: completion)
+        viewControllerStack.append(viewController)
     }
 
     func presentAsRoot(_ viewController: UIViewController) {
         window.rootViewController = viewController
-        presentedViewController = viewController
+        viewControllerStack = [viewController]
     }
 
-    func dissmiss(animated: Bool, completion: (() -> Void)?) {
-        presentedViewController?.dismiss(animated: animated, completion: completion)
-        presentedViewController = presentedViewController?.presentingViewController
+    func dismiss(animated: Bool, completion: (() -> Void)?) {
+        viewControllerStack.last?.dismiss(animated: animated, completion: completion)
+        _ = viewControllerStack.popLast()
     }
 }

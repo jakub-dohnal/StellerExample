@@ -50,6 +50,6 @@ extension AppCoordinator: FeedPresenterRouterDelegate {
 
 extension AppCoordinator: StoriesRouterDelegate {
     func close() {
-        router.dissmiss(animated: true, completion: nil)
+        router.dismiss(animated: true, completion: nil)
     }
 }
