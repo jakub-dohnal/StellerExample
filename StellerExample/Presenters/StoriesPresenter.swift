@@ -15,7 +15,7 @@ protocol StoriesRouterDelegate: class {
 protocol StoriesPresenter {
     func close()
 
-    var stories: [StoryViewModel] { get }
+    var stories: [StoryPresenter] { get }
     var selectedStory: Int { get }
     var routerDelegate: StoriesRouterDelegate? { get set }
 }

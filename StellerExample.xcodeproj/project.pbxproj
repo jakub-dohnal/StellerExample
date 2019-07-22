@@ -11,7 +11,7 @@
 		A71F47E422E1279F00B4BBF9 /* StoriesPresenterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47E322E1279F00B4BBF9 /* StoriesPresenterImp.swift */; };
 		A71F47E822E12C0900B4BBF9 /* URL+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47E722E12C0900B4BBF9 /* URL+Request.swift */; };
 		A71F47EA22E19B1B00B4BBF9 /* InfoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47E922E19B1B00B4BBF9 /* InfoButtonView.swift */; };
-		A71F47EC22E1CE9200B4BBF9 /* StoryViewModelImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47EB22E1CE9200B4BBF9 /* StoryViewModelImp.swift */; };
+		A71F47EC22E1CE9200B4BBF9 /* StoryPresenterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47EB22E1CE9200B4BBF9 /* StoryPresenterImp.swift */; };
 		A71F47EE22E49CD600B4BBF9 /* NetworkServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47ED22E49CD600B4BBF9 /* NetworkServiceImp.swift */; };
 		A71F47F022E49E4800B4BBF9 /* NetworkDispatcherImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47EF22E49E4800B4BBF9 /* NetworkDispatcherImp.swift */; };
 		A71F47F222E6438600B4BBF9 /* FeedPresenterImpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47F122E6438600B4BBF9 /* FeedPresenterImpTests.swift */; };
@@ -28,7 +28,7 @@
 		A758C3E822DE7D2800E4599C /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3E722DE7D2800E4599C /* Reusable.swift */; };
 		A758C3EB22DE82A000E4599C /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3EA22DE82A000E4599C /* NetworkDispatcher.swift */; };
 		A758C3ED22DE868A00E4599C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3EC22DE868A00E4599C /* Request.swift */; };
-		A758C3EF22DE880300E4599C /* StoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3EE22DE880300E4599C /* StoryViewModel.swift */; };
+		A758C3EF22DE880300E4599C /* StoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3EE22DE880300E4599C /* StoryPresenter.swift */; };
 		A758C3F422DE9B9500E4599C /* FeedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3F322DE9B9500E4599C /* FeedRequest.swift */; };
 		A758C3F822DEF80000E4599C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3F722DEF80000E4599C /* NetworkService.swift */; };
 		A758C3FD22DEF8B100E4599C /* StoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3FC22DEF8B100E4599C /* StoryResponse.swift */; };
@@ -39,6 +39,8 @@
 		A758C40B22DF101B00E4599C /* FeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C40A22DF101B00E4599C /* FeedInteractor.swift */; };
 		A758C40D22DF102800E4599C /* FeedInteractorImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C40C22DF102800E4599C /* FeedInteractorImp.swift */; };
 		A758C41522E0F0D800E4599C /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C41422E0F0D800E4599C /* StoriesViewController.swift */; };
+		A7874BEC22E6548A00E12701 /* StoryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7874BEB22E6548A00E12701 /* StoryInteractor.swift */; };
+		A7874BEE22E660C300E12701 /* StoryInteractortImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7874BED22E660C300E12701 /* StoryInteractortImp.swift */; };
 		A7E2E48122DE04EF003207AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2E48022DE04EF003207AC /* AppDelegate.swift */; };
 		A7E2E48822DE04F1003207AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E2E48722DE04F1003207AC /* Assets.xcassets */; };
 		A7E2E48B22DE04F1003207AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E2E48922DE04F1003207AC /* LaunchScreen.storyboard */; };
@@ -68,7 +70,7 @@
 		A71F47E322E1279F00B4BBF9 /* StoriesPresenterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesPresenterImp.swift; sourceTree = "<group>"; };
 		A71F47E722E12C0900B4BBF9 /* URL+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Request.swift"; sourceTree = "<group>"; };
 		A71F47E922E19B1B00B4BBF9 /* InfoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoButtonView.swift; sourceTree = "<group>"; };
-		A71F47EB22E1CE9200B4BBF9 /* StoryViewModelImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewModelImp.swift; sourceTree = "<group>"; };
+		A71F47EB22E1CE9200B4BBF9 /* StoryPresenterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPresenterImp.swift; sourceTree = "<group>"; };
 		A71F47ED22E49CD600B4BBF9 /* NetworkServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImp.swift; sourceTree = "<group>"; };
 		A71F47EF22E49E4800B4BBF9 /* NetworkDispatcherImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcherImp.swift; sourceTree = "<group>"; };
 		A71F47F122E6438600B4BBF9 /* FeedPresenterImpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenterImpTests.swift; sourceTree = "<group>"; };
@@ -85,7 +87,7 @@
 		A758C3E722DE7D2800E4599C /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		A758C3EA22DE82A000E4599C /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
 		A758C3EC22DE868A00E4599C /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		A758C3EE22DE880300E4599C /* StoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewModel.swift; sourceTree = "<group>"; };
+		A758C3EE22DE880300E4599C /* StoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPresenter.swift; sourceTree = "<group>"; };
 		A758C3F322DE9B9500E4599C /* FeedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRequest.swift; sourceTree = "<group>"; };
 		A758C3F722DEF80000E4599C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		A758C3FC22DEF8B100E4599C /* StoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryResponse.swift; sourceTree = "<group>"; };
@@ -96,6 +98,8 @@
 		A758C40A22DF101B00E4599C /* FeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractor.swift; sourceTree = "<group>"; };
 		A758C40C22DF102800E4599C /* FeedInteractorImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedInteractorImp.swift; sourceTree = "<group>"; };
 		A758C41422E0F0D800E4599C /* StoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewController.swift; sourceTree = "<group>"; };
+		A7874BEB22E6548A00E12701 /* StoryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryInteractor.swift; sourceTree = "<group>"; };
+		A7874BED22E660C300E12701 /* StoryInteractortImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryInteractortImp.swift; sourceTree = "<group>"; };
 		A7E2E47D22DE04EF003207AC /* StellerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StellerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E2E48022DE04EF003207AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7E2E48722DE04F1003207AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -211,15 +215,6 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		A758C3F022DE884800E4599C /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				A758C3EE22DE880300E4599C /* StoryViewModel.swift */,
-				A71F47EB22E1CE9200B4BBF9 /* StoryViewModelImp.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		A758C3F522DEF72C00E4599C /* Requests */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +240,8 @@
 				A758C40522DF03EC00E4599C /* FeedPresenterImp.swift */,
 				A71F47E122E1278C00B4BBF9 /* StoriesPresenter.swift */,
 				A71F47E322E1279F00B4BBF9 /* StoriesPresenterImp.swift */,
+				A758C3EE22DE880300E4599C /* StoryPresenter.swift */,
+				A71F47EB22E1CE9200B4BBF9 /* StoryPresenterImp.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -254,6 +251,8 @@
 			children = (
 				A758C40A22DF101B00E4599C /* FeedInteractor.swift */,
 				A758C40C22DF102800E4599C /* FeedInteractorImp.swift */,
+				A7874BEB22E6548A00E12701 /* StoryInteractor.swift */,
+				A7874BED22E660C300E12701 /* StoryInteractortImp.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -292,7 +291,6 @@
 				A71F47E622E12A5100B4BBF9 /* Views */,
 				A758C40922DF100B00E4599C /* Interactors */,
 				A758C40222DF01B200E4599C /* Presenters */,
-				A758C3F022DE884800E4599C /* ViewModels */,
 				A758C3E922DE81D400E4599C /* Networking */,
 				A758C3E622DE7BC100E4599C /* Extensions */,
 				A758C3E122DE750500E4599C /* Protocols */,
@@ -312,8 +310,8 @@
 			isa = PBXGroup;
 			children = (
 				A7E2E49522DE04F1003207AC /* FeedInteractorImpTests.swift */,
-				A7E2E49722DE04F1003207AC /* Info.plist */,
 				A71F47F122E6438600B4BBF9 /* FeedPresenterImpTests.swift */,
+				A7E2E49722DE04F1003207AC /* Info.plist */,
 			);
 			path = StellerExampleTests;
 			sourceTree = "<group>";
@@ -460,7 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A758C40B22DF101B00E4599C /* FeedInteractor.swift in Sources */,
-				A71F47EC22E1CE9200B4BBF9 /* StoryViewModelImp.swift in Sources */,
+				A71F47EC22E1CE9200B4BBF9 /* StoryPresenterImp.swift in Sources */,
 				A71F47EE22E49CD600B4BBF9 /* NetworkServiceImp.swift in Sources */,
 				A758C3DE22DE6D8400E4599C /* StoryCell.swift in Sources */,
 				A758C3ED22DE868A00E4599C /* Request.swift in Sources */,
@@ -469,6 +467,7 @@
 				A758C3D022DE5F5300E4599C /* AppCoordinator.swift in Sources */,
 				A758C3EB22DE82A000E4599C /* NetworkDispatcher.swift in Sources */,
 				A758C41522E0F0D800E4599C /* StoriesViewController.swift in Sources */,
+				A7874BEE22E660C300E12701 /* StoryInteractortImp.swift in Sources */,
 				A758C3D522DE606300E4599C /* Router.swift in Sources */,
 				A758C40D22DF102800E4599C /* FeedInteractorImp.swift in Sources */,
 				A758C3FD22DEF8B100E4599C /* StoryResponse.swift in Sources */,
@@ -481,7 +480,8 @@
 				A758C3E522DE78CF00E4599C /* CollectionCell+Registrable.swift in Sources */,
 				A758C3F422DE9B9500E4599C /* FeedRequest.swift in Sources */,
 				A71F47EA22E19B1B00B4BBF9 /* InfoButtonView.swift in Sources */,
-				A758C3EF22DE880300E4599C /* StoryViewModel.swift in Sources */,
+				A7874BEC22E6548A00E12701 /* StoryInteractor.swift in Sources */,
+				A758C3EF22DE880300E4599C /* StoryPresenter.swift in Sources */,
 				A7E2E48122DE04EF003207AC /* AppDelegate.swift in Sources */,
 				A71F47E222E1278C00B4BBF9 /* StoriesPresenter.swift in Sources */,
 				A758C40122DEFAC500E4599C /* String.swift in Sources */,

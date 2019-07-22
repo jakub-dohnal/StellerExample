@@ -12,9 +12,9 @@ class StoriesPresenterImp: StoriesPresenter {
     weak var routerDelegate: StoriesRouterDelegate?
 
     let selectedStory: Int
-    let stories: [StoryViewModel]
+    let stories: [StoryPresenter]
 
-    init(selectedStory: Int, stories: [StoryViewModel]) {
+    init(selectedStory: Int, stories: [StoryPresenter]) {
         self.selectedStory = selectedStory
         self.stories = stories
     }

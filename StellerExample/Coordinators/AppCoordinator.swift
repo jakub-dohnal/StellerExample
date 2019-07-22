@@ -33,7 +33,7 @@ private extension AppCoordinator {
         router.presentAsRoot(vc)
     }
 
-    func showStory(storyAt index: Int, from stories: [StoryViewModel]) {
+    func showStory(storyAt index: Int, from stories: [StoryPresenter]) {
         let presenter = StoriesPresenterImp(selectedStory: index, stories: stories)
         let vc = StoriesViewController(presenter: presenter)
         presenter.routerDelegate = self
@@ -43,7 +43,7 @@ private extension AppCoordinator {
 }
 
 extension AppCoordinator: FeedPresenterRouterDelegate {
-    func present(storyAt index: Int, from stories: [StoryViewModel]) {
+    func present(storyAt index: Int, from stories: [StoryPresenter]) {
         showStory(storyAt: index, from: stories)
     }
 }

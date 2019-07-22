@@ -14,14 +14,14 @@ protocol FeedPresenterDelegate: class {
 }
 
 protocol FeedPresenterRouterDelegate: class {
-    func present(storyAt: Int, from: [StoryViewModel])
+    func present(storyAt: Int, from: [StoryPresenter])
 }
 
 protocol FeedPresenter: class {
     func reload()
     func present(storyAt: Int)
 
-    var stories: [StoryViewModel] { get }
+    var stories: [StoryPresenter] { get }
     var delegate: FeedPresenterDelegate? { get set }
     var routerDelegate: FeedPresenterRouterDelegate? { get set }
 }

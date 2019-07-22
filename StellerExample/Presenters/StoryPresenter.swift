@@ -1,5 +1,5 @@
 //
-//  StoryViewModel.swift
+//  StoryPresenter.swift
 //  StellerExample
 //
 //  Created by Jakub Dohnal on 17/07/2019.
@@ -8,15 +8,15 @@
 
 import Foundation
 
-protocol StoryViewModelDelegate: class {
+protocol StoryPresenterDelegate: class {
     func didLoadImage()
     func faildLoadImage()
 }
 
-protocol StoryViewModel: class {
+protocol StoryPresenter: class {
     var ratio: Double { get }
     var imageData: Data? { get }
-    var delegate: StoryViewModelDelegate? { get set }
+    var delegate: StoryPresenterDelegate? { get set }
 
     func loadImage()
 }
