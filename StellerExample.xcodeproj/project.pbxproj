@@ -141,6 +141,7 @@
 		A71F47E622E12A5100B4BBF9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A71F47E922E19B1B00B4BBF9 /* InfoButtonView.swift */,
 				A758C3DC22DE6D8400E4599C /* StoryCell.swift */,
 				A758C3DD22DE6D8400E4599C /* StoryCell.xib */,
 			);
@@ -169,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				A758C3D822DE673E00E4599C /* FeedViewController.swift */,
-				A71F47E922E19B1B00B4BBF9 /* InfoButtonView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
