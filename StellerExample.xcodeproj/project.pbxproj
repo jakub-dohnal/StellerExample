@@ -14,6 +14,7 @@
 		A71F47EC22E1CE9200B4BBF9 /* StoryViewModelImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47EB22E1CE9200B4BBF9 /* StoryViewModelImp.swift */; };
 		A71F47EE22E49CD600B4BBF9 /* NetworkServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47ED22E49CD600B4BBF9 /* NetworkServiceImp.swift */; };
 		A71F47F022E49E4800B4BBF9 /* NetworkDispatcherImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47EF22E49E4800B4BBF9 /* NetworkDispatcherImp.swift */; };
+		A71F47F222E6438600B4BBF9 /* FeedPresenterImpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71F47F122E6438600B4BBF9 /* FeedPresenterImpTests.swift */; };
 		A758C3D022DE5F5300E4599C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3CF22DE5F5300E4599C /* AppCoordinator.swift */; };
 		A758C3D222DE5F9200E4599C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3D122DE5F9200E4599C /* Coordinator.swift */; };
 		A758C3D522DE606300E4599C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A758C3D422DE606300E4599C /* Router.swift */; };
@@ -70,6 +71,7 @@
 		A71F47EB22E1CE9200B4BBF9 /* StoryViewModelImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewModelImp.swift; sourceTree = "<group>"; };
 		A71F47ED22E49CD600B4BBF9 /* NetworkServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImp.swift; sourceTree = "<group>"; };
 		A71F47EF22E49E4800B4BBF9 /* NetworkDispatcherImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcherImp.swift; sourceTree = "<group>"; };
+		A71F47F122E6438600B4BBF9 /* FeedPresenterImpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenterImpTests.swift; sourceTree = "<group>"; };
 		A758C3CF22DE5F5300E4599C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		A758C3D122DE5F9200E4599C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A758C3D422DE606300E4599C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 			children = (
 				A7E2E49522DE04F1003207AC /* FeedInteractorImpTests.swift */,
 				A7E2E49722DE04F1003207AC /* Info.plist */,
+				A71F47F122E6438600B4BBF9 /* FeedPresenterImpTests.swift */,
 			);
 			path = StellerExampleTests;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7E2E49622DE04F1003207AC /* FeedInteractorImpTests.swift in Sources */,
+				A71F47F222E6438600B4BBF9 /* FeedPresenterImpTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
